@@ -11,8 +11,24 @@
                 </p>
             </div>
 
+            <!-- Loading State -->
+            <div v-if="loading" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div v-for="i in 6" :key="i" class="animate-pulse">
+                    <div class="bg-slate-200 dark:bg-slate-700 rounded-2xl h-64"></div>
+                </div>
+            </div>
+
+            <!-- Error State -->
+            <div v-else-if="error" class="text-center py-8">
+                <p class="text-red-600 dark:text-red-400">{{ error }}</p>
+                <button @click="fetchLatestNews"
+                    class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                    Coba Lagi
+                </button>
+            </div>
+
             <!-- News Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 <!-- Featured News -->
                 <div v-for="(article, index) in latestNews" :key="article.id" class="group cursor-pointer"
                     :class="{ 'md:col-span-2 lg:col-span-1': index === 0 }" data-aos="fade-up"
@@ -22,8 +38,7 @@
                         class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group-hover:scale-105">
                         <!-- Image -->
                         <div class="relative overflow-hidden">
-                            <img :src="article.featured_image || '/assets/images/placeholder-news.jpg'"
-                                :alt="article.title"
+                            <img :src="getImageUrl(article.featured_image)" :alt="article.title"
                                 class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
                             </div>
@@ -53,7 +68,7 @@
                             </h3>
 
                             <p class="text-slate-600 dark:text-slate-300 mb-4 line-clamp-3">
-                                {{ article.excerpt }}
+                                {{ cleanExcerpt(article.content) }}
                             </p>
 
                             <!-- Tags -->
@@ -101,42 +116,30 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Calendar, Star, Eye, ArrowRight } from 'lucide-vue-next'
 
-// Sample data dari seeder (real data dari Desa Kertayasa)
-const latestNews = ref([
-    {
-        id: 1,
-        title: 'Program Digitalisasi Layanan Desa Kertayasa',
-        slug: 'program-digitalisasi-layanan-desa-kertayasa',
-        excerpt: 'Desa Kertayasa meluncurkan sistem informasi digital untuk mempermudah masyarakat dalam mengakses berbagai layanan administratif.',
-        featured_image: '/assets/images/news/digitalisasi-desa.jpg',
-        is_featured: true,
-        view_count: 125,
-        published_at: new Date(Date.now() - 24 * 60 * 60 * 1000), // 1 day ago
-        tags: '["digitalisasi", "teknologi", "layanan-desa"]'
-    },
-    {
-        id: 2,
-        title: 'Peningkatan Infrastruktur Jalan Desa Tahun 2025',
-        slug: 'peningkatan-infrastruktur-jalan-desa-tahun-2025',
-        excerpt: 'Pembangunan dan perbaikan jalan desa sepanjang 2.5 KM untuk meningkatkan aksesibilitas dan mobilitas masyarakat.',
-        featured_image: '/assets/images/news/pembangunan-jalan.jpg',
-        is_featured: false,
-        view_count: 89,
-        published_at: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000), // 3 days ago
-        tags: '["infrastruktur", "pembangunan", "jalan-desa"]'
-    },
-    {
-        id: 3,
-        title: 'Kegiatan Gotong Royong Bersih Desa',
-        slug: 'kegiatan-gotong-royong-bersih-desa',
-        excerpt: 'Seluruh warga Kertayasa berpartisipasi dalam kegiatan gotong royong membersihkan lingkungan desa.',
-        featured_image: '/assets/images/news/gotong-royong.jpg',
-        is_featured: false,
-        view_count: 67,
-        published_at: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000), // 5 days ago
-        tags: '["gotong-royong", "kebersihan", "lingkungan"]'
+// News data from API
+const latestNews = ref([])
+const loading = ref(true)
+const error = ref(null)
+
+// Fetch latest news from API
+const fetchLatestNews = async () => {
+    try {
+        loading.value = true
+        const response = await fetch('/api/news/latest')
+        const result = await response.json()
+
+        if (result.success) {
+            latestNews.value = result.data
+        } else {
+            error.value = 'Failed to load news'
+        }
+    } catch (err) {
+        error.value = 'Network error while loading news'
+        console.error('Error fetching news:', err)
+    } finally {
+        loading.value = false
     }
-])
+}
 
 const formatDate = (date) => {
     return new Intl.DateTimeFormat('id-ID', {
@@ -148,14 +151,64 @@ const formatDate = (date) => {
 
 const getTagsArray = (tags) => {
     try {
-        return JSON.parse(tags).map(tag => tag.replace('-', ' '))
+        return Array.isArray(tags) ? tags : JSON.parse(tags).map(tag => tag.replace('-', ' '))
     } catch {
         return []
     }
 }
 
+const getImageUrl = (imageName) => {
+    if (!imageName) {
+        return '/storage/assets/image/placeholder-news.jpg'
+    }
+    return `/storage/assets/image/berita/${imageName}`
+}
+
+const cleanExcerpt = (htmlContent, maxLength = 120) => {
+    if (!htmlContent) return ''
+
+    let cleanText = htmlContent
+
+    // First decode HTML entities
+    cleanText = cleanText
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .replace(/&#039;/g, "'")
+        .replace(/&amp;/g, '&')
+        .replace(/&nbsp;/g, ' ')
+
+    // Remove common escape characters
+    cleanText = cleanText
+        .replace(/\\r\\n/g, ' ')
+        .replace(/\\n/g, ' ')
+        .replace(/\\r/g, ' ')
+        .replace(/\r\n/g, ' ')
+        .replace(/\n/g, ' ')
+        .replace(/\r/g, ' ')
+
+    // Create a temporary div to parse remaining HTML
+    const tempDiv = document.createElement('div')
+    tempDiv.innerHTML = cleanText
+
+    // Get text content only (removes all HTML tags)
+    let textContent = tempDiv.textContent || tempDiv.innerText || ''
+
+    // Remove extra whitespace and normalize spaces
+    textContent = textContent
+        .replace(/\s+/g, ' ')
+        .replace(/^\s+|\s+$/g, '')
+        .trim()
+
+    // Truncate to maxLength with ellipsis
+    if (textContent.length > maxLength) {
+        textContent = textContent.substring(0, maxLength).trim() + '...'
+    }
+
+    return textContent
+}
+
 onMounted(() => {
-    // TODO: Fetch real data from API when available
-    // fetchLatestNews()
+    fetchLatestNews()
 })
 </script>

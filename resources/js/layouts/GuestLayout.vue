@@ -112,30 +112,7 @@
             </div>
         </header>
 
-        <!-- Hero Section (only on homepage) -->
-        <section v-if="showHero" class="relative bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
-            <div class="container mx-auto px-4 py-16">
-                <div class="max-w-3xl">
-                    <h2 class="text-4xl font-bold mb-4">Selamat Datang di Website Desa Kertayasa</h2>
-                    <p class="text-xl opacity-90 mb-8">Portal informasi dan layanan digital untuk masyarakat Desa
-                        Kertayasa, Kuningan, Jawa Barat</p>
-                    <div class="flex flex-wrap gap-4">
-                        <Button size="lg" variant="secondary">
-                            <FileText class="h-4 w-4 mr-2" />
-                            Layanan Publik
-                        </Button>
-                        <Button size="lg" variant="outline"
-                            class="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                            <MessageSquare class="h-4 w-4 mr-2" />
-                            Pengaduan Online
-                        </Button>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Background Pattern -->
-            <div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]" />
-        </section>
 
         <!-- Breadcrumbs (not on homepage) -->
         <nav v-if="!isHomepage" class="bg-muted/50 border-b">
