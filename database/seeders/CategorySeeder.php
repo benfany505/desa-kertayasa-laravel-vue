@@ -19,7 +19,7 @@ class CategorySeeder extends Seeder
             [
                 'name' => 'Berita Desa',
                 'slug' => Str::slug('Berita Desa'),
-                'description' => 'Berita dan informasi terkini tentang kegiatan di Desa Kertayasa',
+                'description' => 'Berita dan informasi terkini tentang kegiatan di Desa Pintar',
                 'color' => '#3B82F6',
                 'is_active' => true,
                 'sort_order' => 1

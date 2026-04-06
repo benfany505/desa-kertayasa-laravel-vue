@@ -5,7 +5,7 @@ const commonRoutes = [
     name: 'not-found',
     component: () => import('@/pages/NotFound.vue'),
     meta: {
-      title: 'Halaman Tidak Ditemukan - Website Desa Kertayasa',
+      title: 'Halaman Tidak Ditemukan - Website Desa Pintar',
       layout: 'error',
     },
   },
@@ -14,7 +14,7 @@ const commonRoutes = [
     name: 'forbidden',
     component: () => import('@/pages/Forbidden.vue'),
     meta: {
-      title: 'Akses Ditolak - Website Desa Kertayasa',
+      title: 'Akses Ditolak - Website Desa Pintar',
       layout: 'error',
     },
   },
@@ -23,7 +23,7 @@ const commonRoutes = [
     name: 'server-error',
     component: () => import('@/pages/ServerError.vue'),
     meta: {
-      title: 'Server Error - Website Desa Kertayasa',
+      title: 'Server Error - Website Desa Pintar',
       layout: 'error',
     },
   },

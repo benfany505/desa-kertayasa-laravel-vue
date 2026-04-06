@@ -7,7 +7,7 @@
                     Berita Terkini
                 </h2>
                 <p class="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-                    Informasi terbaru seputar kegiatan dan perkembangan Desa Kertayasa
+                    Informasi terbaru seputar kegiatan dan perkembangan Desa Pintar
                 </p>
             </div>
 

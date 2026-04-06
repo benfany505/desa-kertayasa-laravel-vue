@@ -8,7 +8,7 @@
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
                             <router-link to="/" class="flex items-center">
-                                <img class="h-8 w-8" src="/logo.png" alt="Desa Kertayasa" />
+                                <img class="h-8 w-8" src="/logo.png" alt="Desa Pintar" />
                                 <span class="ml-2 text-xl font-bold text-gray-900 dark:text-white">
                                     Admin Panel
                                 </span>
@@ -83,7 +83,7 @@
                                         class="px-4 py-2 text-sm text-gray-700 dark:text-gray-200 border-b border-gray-200 dark:border-gray-600">
                                         <div class="font-medium">{{ authStore.user?.name }}</div>
                                         <div class="text-gray-500 dark:text-gray-400 capitalize">{{ authStore.user?.role
-                                            }}</div>
+                                        }}</div>
                                     </div>
 
                                     <router-link to="/admin/profile"

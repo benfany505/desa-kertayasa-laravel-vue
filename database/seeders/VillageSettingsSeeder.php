@@ -15,10 +15,10 @@ class VillageSettingsSeeder extends Seeder
     {
         $settings = [
             // General Settings - Data dari etnproje_kertayasa.sql
-            ['key' => 'village_name', 'value' => 'Desa Kertayasa', 'type' => 'text', 'description' => 'Nama Desa', 'group' => 'general'],
+            ['key' => 'village_name', 'value' => 'Desa Pintar', 'type' => 'text', 'description' => 'Nama Desa', 'group' => 'general'],
             ['key' => 'village_logo', 'value' => '/assets/images/logo-desa.png', 'type' => 'text', 'description' => 'Logo Desa', 'group' => 'general'],
-            ['key' => 'village_tagline', 'value' => 'Masyarakat Panuju Kertayasa Maju', 'type' => 'text', 'description' => 'Tagline Desa dari data asli', 'group' => 'general'],
-            ['key' => 'village_vision', 'value' => 'Menjadi Desa Kertayasa MAJU (Makmur, Agamis dan Juara) berbasis Potensi Desa pada tahun 2025', 'type' => 'text', 'description' => 'Visi Desa', 'group' => 'general'],
+            ['key' => 'village_tagline', 'value' => 'Masyarakat Panuju Desa Pintar Maju', 'type' => 'text', 'description' => 'Tagline Desa dari data asli', 'group' => 'general'],
+            ['key' => 'village_vision', 'value' => 'Menjadi Desa Pintar MAJU (Makmur, Agamis dan Juara) berbasis Potensi Desa pada tahun 2025', 'type' => 'text', 'description' => 'Visi Desa', 'group' => 'general'],
             ['key' => 'village_mission', 'value' => json_encode([
                 'Memperkuat Kualitas Pembinaan Sumber Daya Manusia yang Cerdas Secara Intelektual, Emosional dan Spiritual.',
                 'Memaksimalkan Potensi Sumber Daya Manusia dan Sumber Daya Alam sebagai Peluang Dunia Usaha dan Produktivitas Ekonomi masyarakat yang Ramah Lingkungan',
@@ -29,7 +29,7 @@ class VillageSettingsSeeder extends Seeder
             ]), 'type' => 'json', 'description' => 'Misi Desa', 'group' => 'general'],
 
             // Contact Information - Data asli dari etnproje_kertayasa.sql
-            ['key' => 'village_address', 'value' => 'Jl. Desa Kertayasa', 'type' => 'text', 'description' => 'Alamat Desa', 'group' => 'contact'],
+            ['key' => 'village_address', 'value' => 'Jl. Desa Pintar', 'type' => 'text', 'description' => 'Alamat Desa', 'group' => 'contact'],
             ['key' => 'village_postal_code', 'value' => '45573', 'type' => 'text', 'description' => 'Kode Pos', 'group' => 'contact'],
             ['key' => 'village_phone', 'value' => '(0232) 8910588', 'type' => 'text', 'description' => 'Telepon Desa', 'group' => 'contact'],
             ['key' => 'village_email', 'value' => 'admin@desakertayasa.id', 'type' => 'text', 'description' => 'Email Desa', 'group' => 'contact'],
@@ -54,9 +54,9 @@ class VillageSettingsSeeder extends Seeder
             ['key' => 'youtube_url', 'value' => 'https://youtube.com/@desakertayasa', 'type' => 'text', 'description' => 'YouTube URL', 'group' => 'social'],
 
             // SEO Settings
-            ['key' => 'meta_title', 'value' => 'Desa Kertayasa - SIMAK (Sistem Informasi Masyarakat Kertayasa)', 'type' => 'text', 'description' => 'Meta Title', 'group' => 'seo'],
-            ['key' => 'meta_description', 'value' => 'Website resmi Pemerintah Desa Kertayasa, Kecamatan Sindangagung, Kabupaten Kuningan, Jawa Barat. Portal informasi dan layanan digital untuk masyarakat.', 'type' => 'text', 'description' => 'Meta Description', 'group' => 'seo'],
-            ['key' => 'meta_keywords', 'value' => 'Desa Kertayasa, SIMAK, Sindangagung, Kuningan, Jawa Barat, Pemerintah Desa, Layanan Digital', 'type' => 'text', 'description' => 'Meta Keywords', 'group' => 'seo'],
+            ['key' => 'meta_title', 'value' => 'Desa Pintar - SIMAK (Sistem Informasi Masyarakat Desa Pintar)', 'type' => 'text', 'description' => 'Meta Title', 'group' => 'seo'],
+            ['key' => 'meta_description', 'value' => 'Website resmi Pemerintah Desa Pintar, Kecamatan Sindangagung, Kabupaten Kuningan, Jawa Barat. Portal informasi dan layanan digital untuk masyarakat.', 'type' => 'text', 'description' => 'Meta Description', 'group' => 'seo'],
+            ['key' => 'meta_keywords', 'value' => 'Desa Pintar, SIMAK, Sindangagung, Kuningan, Jawa Barat, Pemerintah Desa, Layanan Digital', 'type' => 'text', 'description' => 'Meta Keywords', 'group' => 'seo'],
         ];
 
         foreach ($settings as $setting) {

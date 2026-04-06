@@ -13,20 +13,20 @@
                     <div
                         class="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-sm font-medium mb-6">
                         <Sparkles class="h-4 w-4 mr-2" />
-                        SIMAK - Sistem Informasi Masyarakat Kertayasa
+                        SIMAK - Sistem Informasi Masyarakat Desa Pintar
                     </div>
 
                     <!-- Main Heading -->
                     <h1 class="text-4xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         Selamat Datang di
                         <span class="block bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-                            Desa Kertayasa
+                            Desa Pintar
                         </span>
                     </h1>
 
                     <!-- Tagline -->
                     <p class="text-xl lg:text-2xl text-blue-100 font-medium mb-4">
-                        {{ settings.village_tagline || 'Masyarakat Panuju Kertayasa Maju' }}
+                        {{ settings.village_tagline || 'Masyarakat Panuju Desa Pintar Maju' }}
                     </p>
 
                     <!-- Description -->
@@ -131,7 +131,7 @@ import {
 
 // Real data dari seeder
 const settings = ref({
-    village_tagline: 'Masyarakat Panuju Kertayasa Maju',
+    village_tagline: 'Masyarakat Panuju Desa Pintar Maju',
     village_district: 'Sindangagung',
     village_regency: 'Kuningan',
     village_province: 'Jawa Barat',
@@ -152,7 +152,7 @@ const fullDescription = computed(() => {
     const regency = settings.value.village_regency || 'Kuningan'
     const province = settings.value.village_province || 'Jawa Barat'
 
-    return `Portal informasi dan layanan digital untuk masyarakat Desa Kertayasa, Kecamatan ${district}, Kabupaten ${regency}, ${province}`
+    return `Portal informasi dan layanan digital untuk masyarakat Desa Pintar, Kecamatan ${district}, Kabupaten ${regency}, ${province}`
 })
 
 const primaryButtonClass = computed(() =>

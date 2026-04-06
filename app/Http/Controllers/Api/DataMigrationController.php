@@ -307,7 +307,7 @@ class DataMigrationController extends Controller
             DB::table('village_profiles')->updateOrInsert(
                 ['id' => 1],
                 [
-                    'name' => $this->cleanValue($item[1] ?? 'Desa Kertayasa'),
+                    'name' => $this->cleanValue($item[1] ?? 'Desa Pintar'),
                     'description' => $this->cleanValue($item[2] ?? ''),
                     'address' => $this->cleanValue($item[3] ?? ''),
                     'postal_code' => $this->cleanValue($item[4] ?? ''),

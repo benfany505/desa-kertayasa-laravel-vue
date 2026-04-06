@@ -5,7 +5,7 @@ const guestRoutes = [
     name: 'home',
     component: () => import('@/pages/Home.vue'),
     meta: {
-      title: 'Beranda - Website Desa Kertayasa',
+      title: 'Beranda - Website Desa Pintar',
       requiresGuest: false,
     },
   },
@@ -14,7 +14,7 @@ const guestRoutes = [
     name: 'about',
     component: () => import('@/pages/About.vue'),
     meta: {
-      title: 'Tentang - Website Desa Kertayasa',
+      title: 'Tentang - Website Desa Pintar',
       requiresGuest: false,
     },
   },
@@ -23,7 +23,7 @@ const guestRoutes = [
     name: 'news.index',
     component: () => import('@/pages/news/Index.vue'),
     meta: {
-      title: 'Berita - Website Desa Kertayasa',
+      title: 'Berita - Website Desa Pintar',
       requiresGuest: false,
     },
   },
@@ -32,7 +32,7 @@ const guestRoutes = [
     name: 'news.show',
     component: () => import('@/pages/news/Show.vue'),
     meta: {
-      title: 'Berita - Website Desa Kertayasa',
+      title: 'Berita - Website Desa Pintar',
       requiresGuest: false,
     },
   },
@@ -41,7 +41,7 @@ const guestRoutes = [
     name: 'gallery.index',
     component: () => import('@/pages/gallery/Index.vue'),
     meta: {
-      title: 'Galeri - Website Desa Kertayasa',
+      title: 'Galeri - Website Desa Pintar',
       requiresGuest: false,
     },
   },
@@ -50,7 +50,7 @@ const guestRoutes = [
     name: 'services.index',
     component: () => import('@/pages/services/Index.vue'),
     meta: {
-      title: 'Layanan - Website Desa Kertayasa',
+      title: 'Layanan - Website Desa Pintar',
       requiresGuest: false,
     },
   },
@@ -59,7 +59,7 @@ const guestRoutes = [
     name: 'complaints.create',
     component: () => import('@/pages/complaints/Create.vue'),
     meta: {
-      title: 'Pengaduan - Website Desa Kertayasa',
+      title: 'Pengaduan - Website Desa Pintar',
       requiresGuest: false,
     },
   },
@@ -68,7 +68,7 @@ const guestRoutes = [
     name: 'contact',
     component: () => import('@/pages/Contact.vue'),
     meta: {
-      title: 'Kontak - Website Desa Kertayasa',
+      title: 'Kontak - Website Desa Pintar',
       requiresGuest: false,
     },
   },

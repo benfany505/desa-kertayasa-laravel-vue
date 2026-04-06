@@ -44,7 +44,7 @@
                             <Building class="h-6 w-6 text-primary-foreground" />
                         </div>
                         <div class="hidden sm:block">
-                            <h1 class="text-xl font-bold text-primary">Desa Kertayasa</h1>
+                            <h1 class="text-xl font-bold text-primary">Desa Pintar</h1>
                             <p class="text-sm text-muted-foreground">Pemerintahan Desa</p>
                         </div>
                     </router-link>
@@ -152,10 +152,10 @@
                             <div class="h-8 w-8 bg-primary rounded-full flex items-center justify-center">
                                 <Building class="h-4 w-4 text-primary-foreground" />
                             </div>
-                            <h3 class="font-semibold">Desa Kertayasa</h3>
+                            <h3 class="font-semibold">Desa Pintar</h3>
                         </div>
                         <p class="text-sm text-muted-foreground mb-4">
-                            Website resmi Pemerintah Desa Kertayasa, Kecamatan Kuningan, Kabupaten Kuningan, Provinsi
+                            Website resmi Pemerintah Desa Pintar, Kecamatan Kuningan, Kabupaten Kuningan, Provinsi
                             Jawa Barat.
                         </p>
                         <div class="flex space-x-2">
@@ -212,7 +212,7 @@
                         <ul class="space-y-2 text-sm text-muted-foreground">
                             <li class="flex items-start">
                                 <MapPin class="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" />
-                                <span>Jl. Raya Kertayasa No. 123<br>Kuningan, Jawa Barat 45511</span>
+                                <span>Jl. Raya Desa Pintar No. 123<br>Kuningan, Jawa Barat 45511</span>
                             </li>
                             <li class="flex items-center">
                                 <Phone class="h-4 w-4 mr-2 flex-shrink-0" />
@@ -231,7 +231,7 @@
                 </div>
 
                 <div class="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-                    <p>&copy; {{ currentYear }} Pemerintah Desa Kertayasa. Hak Cipta Dilindungi.</p>
+                    <p>&copy; {{ currentYear }} Pemerintah Desa Pintar. Hak Cipta Dilindungi.</p>
                 </div>
             </div>
         </footer>

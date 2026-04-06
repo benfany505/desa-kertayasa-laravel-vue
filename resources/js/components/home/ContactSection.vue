@@ -7,7 +7,7 @@
                     Hubungi Kami
                 </h2>
                 <p class="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-                    Kami siap melayani dan membantu masyarakat Desa Kertayasa
+                    Kami siap melayani dan membantu masyarakat Desa Pintar
                 </p>
             </div>
 
@@ -141,7 +141,7 @@ import { MapPin, Phone, Mail, Send, Facebook, Instagram, Youtube } from 'lucide-
 
 // Real contact data dari seeder
 const contact = ref({
-    address: 'Jl. Desa Kertayasa',
+    address: 'Jl. Desa Pintar',
     district: 'Sindangagung',
     regency: 'Kuningan',
     province: 'Jawa Barat',

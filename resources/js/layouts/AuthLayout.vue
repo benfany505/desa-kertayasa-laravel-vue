@@ -13,7 +13,7 @@
                     </div>
                     <div>
                         <h1 class="text-lg font-semibold">Admin Panel</h1>
-                        <p class="text-xs text-muted-foreground">Desa Kertayasa</p>
+                        <p class="text-xs text-muted-foreground">Desa Pintar</p>
                     </div>
                 </router-link>
                 <Button variant="ghost" size="sm" class="lg:hidden" @click="toggleSidebar">

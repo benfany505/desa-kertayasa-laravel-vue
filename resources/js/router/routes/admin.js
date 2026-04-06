@@ -5,7 +5,7 @@ const adminRoutes = [
     name: 'admin.login',
     component: () => import('@/pages/admin/Login.vue'),
     meta: {
-      title: 'Login Admin - Website Desa Kertayasa',
+      title: 'Login Admin - Website Desa Pintar',
       requiresGuest: true,
       layout: 'auth',
     },
@@ -15,7 +15,7 @@ const adminRoutes = [
     name: 'admin.dashboard',
     component: () => import('@/pages/admin/Dashboard.vue'),
     meta: {
-      title: 'Dashboard Admin - Website Desa Kertayasa',
+      title: 'Dashboard Admin - Website Desa Pintar',
       requiresAuth: true,
       layout: 'admin',
     },
@@ -25,7 +25,7 @@ const adminRoutes = [
     name: 'admin.profile',
     component: () => import('@/pages/admin/Profile.vue'),
     meta: {
-      title: 'Profile Admin - Website Desa Kertayasa',
+      title: 'Profile Admin - Website Desa Pintar',
       requiresAuth: true,
       layout: 'admin',
     },

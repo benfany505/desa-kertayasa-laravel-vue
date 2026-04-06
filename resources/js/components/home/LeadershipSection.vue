@@ -7,7 +7,7 @@
                     Pimpinan Desa
                 </h2>
                 <p class="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-                    Kepemimpinan yang berkomitmen untuk memajukan Desa Kertayasa menuju visi MAJU
+                    Kepemimpinan yang berkomitmen untuk memajukan Desa Pintar menuju visi MAJU
                 </p>
             </div>
 
@@ -44,7 +44,7 @@
                                 Kepala Desa
                             </p>
                             <p class="text-slate-600 dark:text-slate-300 text-sm mb-6">
-                                "Memimpin dengan dedikasi tinggi untuk mewujudkan Desa Kertayasa yang MAJU (Makmur,
+                                "Memimpin dengan dedikasi tinggi untuk mewujudkan Desa Pintar yang MAJU (Makmur,
                                 Agamis dan Juara)"
                             </p>
 
@@ -175,7 +175,7 @@ const leadership = ref({
 })
 
 const visionMission = ref({
-    vision: 'Menjadi Desa Kertayasa MAJU (Makmur, Agamis dan Juara) berbasis Potensi Desa pada tahun 2025',
+    vision: 'Menjadi Desa Pintar MAJU (Makmur, Agamis dan Juara) berbasis Potensi Desa pada tahun 2025',
     missions: [
         'Memperkuat Kualitas Pembinaan Sumber Daya Manusia yang Cerdas Secara Intelektual, Emosional dan Spiritual.',
         'Memaksimalkan Potensi Sumber Daya Manusia dan Sumber Daya Alam sebagai Peluang Dunia Usaha dan Produktivitas Ekonomi masyarakat yang Ramah Lingkungan',

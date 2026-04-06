@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Website Desa Kertayasa') }}</title>
+        <title>{{ config('app.name', 'Website Desa Pintar') }}</title>
 
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -19,24 +19,23 @@
 
         <!-- Meta Tags -->
         <meta name="description"
-                content="Website resmi Pemerintah Desa Kertayasa, Kabupaten Kuningan, Jawa Barat. Portal informasi dan layanan digital desa.">
-        <meta name="keywords" content="Desa Kertayasa, Kuningan, Pemerintah Desa, Layanan Publik, Transparansi">
-        <meta name="author" content="Pemerintah Desa Kertayasa">
+                content="Website resmi Pemerintah Desa Pintar, Kabupaten Kuningan, Jawa Barat. Portal informasi dan layanan digital desa.">
+        <meta name="keywords" content="Desa Pintar, Kuningan, Pemerintah Desa, Layanan Publik, Transparansi">
+        <meta name="author" content="Pemerintah Desa Pintar">
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ config('app.url') }}">
-        <meta property="og:title" content="{{ config('app.name', 'Website Desa Kertayasa') }}">
-        <meta property="og:description"
-                content="Website resmi Pemerintah Desa Kertayasa, Kabupaten Kuningan, Jawa Barat">
+        <meta property="og:title" content="{{ config('app.name', 'Website Desa Pintar') }}">
+        <meta property="og:description" content="Website resmi Pemerintah Desa Pintar, Kabupaten Kuningan, Jawa Barat">
         <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="{{ config('app.url') }}">
-        <meta property="twitter:title" content="{{ config('app.name', 'Website Desa Kertayasa') }}">
+        <meta property="twitter:title" content="{{ config('app.name', 'Website Desa Pintar') }}">
         <meta property="twitter:description"
-                content="Website resmi Pemerintah Desa Kertayasa, Kabupaten Kuningan, Jawa Barat">
+                content="Website resmi Pemerintah Desa Pintar, Kabupaten Kuningan, Jawa Barat">
         <meta property="twitter:image" content="{{ asset('images/og-image.jpg') }}">
 
         <!-- Styles -->

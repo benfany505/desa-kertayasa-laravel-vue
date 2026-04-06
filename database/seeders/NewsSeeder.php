@@ -17,10 +17,10 @@ class NewsSeeder extends Seeder
     {
         $news = [
             [
-                'title' => 'Program Digitalisasi Layanan Desa Kertayasa',
-                'slug' => Str::slug('Program Digitalisasi Layanan Desa Kertayasa'),
-                'excerpt' => 'Desa Kertayasa meluncurkan sistem informasi digital untuk mempermudah masyarakat dalam mengakses berbagai layanan administratif.',
-                'content' => '<p>Desa Kertayasa dengan bangga meluncurkan sistem informasi digital yang akan memudahkan masyarakat dalam mengakses berbagai layanan administratif. Program ini merupakan bagian dari visi Desa Kertayasa MAJU (Makmur, Agamis dan Juara).</p><p>Dengan adanya sistem digital ini, masyarakat dapat mengakses informasi dan layanan desa secara online, mulai dari pengajuan surat-menyurat, informasi kegiatan desa, hingga pengaduan masyarakat.</p>',
+                'title' => 'Program Digitalisasi Layanan Desa Pintar',
+                'slug' => Str::slug('Program Digitalisasi Layanan Desa Pintar'),
+                'excerpt' => 'Desa Pintar meluncurkan sistem informasi digital untuk mempermudah masyarakat dalam mengakses berbagai layanan administratif.',
+                'content' => '<p>Desa Pintar dengan bangga meluncurkan sistem informasi digital yang akan memudahkan masyarakat dalam mengakses berbagai layanan administratif. Program ini merupakan bagian dari visi Desa Pintar MAJU (Makmur, Agamis dan Juara).</p><p>Dengan adanya sistem digital ini, masyarakat dapat mengakses informasi dan layanan desa secara online, mulai dari pengajuan surat-menyurat, informasi kegiatan desa, hingga pengaduan masyarakat.</p>',
                 'featured_image' => '/assets/images/news/digitalisasi-desa.jpg',
                 'status' => 'published',
                 'is_featured' => true,
@@ -32,8 +32,8 @@ class NewsSeeder extends Seeder
             [
                 'title' => 'Gotong Royong Pembersihan Desa Menyambut Hari Kemerdekaan',
                 'slug' => Str::slug('Gotong Royong Pembersihan Desa Menyambut Hari Kemerdekaan'),
-                'excerpt' => 'Masyarakat Desa Kertayasa bergotong royong membersihkan lingkungan desa dalam rangka menyambut peringatan hari kemerdekaan RI.',
-                'content' => '<p>Dalam rangka menyambut peringatan Hari Kemerdekaan Republik Indonesia, masyarakat Desa Kertayasa mengadakan gotong royong pembersihan lingkungan desa. Kegiatan ini diikuti oleh seluruh elemen masyarakat dari berbagai kalangan.</p><p>Semangat gotong royong yang masih kuat di Desa Kertayasa menunjukkan bahwa nilai-nilai kebersamaan masih terjaga dengan baik di tengah masyarakat.</p>',
+                'excerpt' => 'Masyarakat Desa Pintar bergotong royong membersihkan lingkungan desa dalam rangka menyambut peringatan hari kemerdekaan RI.',
+                'content' => '<p>Dalam rangka menyambut peringatan Hari Kemerdekaan Republik Indonesia, masyarakat Desa Pintar mengadakan gotong royong pembersihan lingkungan desa. Kegiatan ini diikuti oleh seluruh elemen masyarakat dari berbagai kalangan.</p><p>Semangat gotong royong yang masih kuat di Desa Pintar menunjukkan bahwa nilai-nilai kebersamaan masih terjaga dengan baik di tengah masyarakat.</p>',
                 'featured_image' => '/assets/images/news/gotong-royong.jpg',
                 'status' => 'published',
                 'is_featured' => false,
@@ -46,7 +46,7 @@ class NewsSeeder extends Seeder
                 'title' => 'Pelatihan UMKM Digital untuk Warga Desa',
                 'slug' => Str::slug('Pelatihan UMKM Digital untuk Warga Desa'),
                 'excerpt' => 'Dinas Koperasi bekerja sama dengan Pemerintah Desa mengadakan pelatihan UMKM digital untuk meningkatkan ekonomi warga.',
-                'content' => '<p>Pemerintah Desa Kertayasa bekerja sama dengan Dinas Koperasi Kabupaten Kuningan mengadakan pelatihan UMKM digital untuk para pelaku usaha mikro di desa. Pelatihan ini bertujuan untuk meningkatkan kemampuan warga dalam memasarkan produk secara online.</p><p>Materi pelatihan mencakup cara membuat toko online, pemasaran digital, dan manajemen keuangan UMKM. Diharapkan setelah pelatihan ini, UMKM di Desa Kertayasa dapat berkembang lebih pesat.</p>',
+                'content' => '<p>Pemerintah Desa Pintar bekerja sama dengan Dinas Koperasi Kabupaten Kuningan mengadakan pelatihan UMKM digital untuk para pelaku usaha mikro di desa. Pelatihan ini bertujuan untuk meningkatkan kemampuan warga dalam memasarkan produk secara online.</p><p>Materi pelatihan mencakup cara membuat toko online, pemasaran digital, dan manajemen keuangan UMKM. Diharapkan setelah pelatihan ini, UMKM di Desa Pintar dapat berkembang lebih pesat.</p>',
                 'featured_image' => '/assets/images/news/pelatihan-umkm.jpg',
                 'status' => 'published',
                 'is_featured' => true,
@@ -59,7 +59,7 @@ class NewsSeeder extends Seeder
                 'title' => 'Posyandu Balita Rutin Bulan Oktober 2025',
                 'slug' => Str::slug('Posyandu Balita Rutin Bulan Oktober 2025'),
                 'excerpt' => 'Kegiatan Posyandu balita rutin bulan Oktober 2025 dilaksanakan di setiap dusun dengan partisipasi aktif para ibu.',
-                'content' => '<p>Kegiatan Posyandu balita rutin bulan Oktober 2025 telah dilaksanakan di seluruh dusun di Desa Kertayasa. Kegiatan ini diikuti oleh puluhan ibu-ibu dengan balita mereka untuk melakukan pemeriksaan kesehatan rutin.</p><p>Tim kesehatan dari Puskesmas Sindangagung hadir untuk memberikan pelayanan kesehatan terbaik. Selain pemeriksaan kesehatan, juga diberikan penyuluhan tentang gizi balita dan imunisasi.</p>',
+                'content' => '<p>Kegiatan Posyandu balita rutin bulan Oktober 2025 telah dilaksanakan di seluruh dusun di Desa Pintar. Kegiatan ini diikuti oleh puluhan ibu-ibu dengan balita mereka untuk melakukan pemeriksaan kesehatan rutin.</p><p>Tim kesehatan dari Puskesmas Sindangagung hadir untuk memberikan pelayanan kesehatan terbaik. Selain pemeriksaan kesehatan, juga diberikan penyuluhan tentang gizi balita dan imunisasi.</p>',
                 'featured_image' => '/assets/images/news/posyandu.jpg',
                 'status' => 'published',
                 'is_featured' => false,
@@ -69,10 +69,10 @@ class NewsSeeder extends Seeder
                 'tags' => json_encode(['posyandu', 'kesehatan', 'balita'])
             ],
             [
-                'title' => 'Renovasi Balai Desa Kertayasa Tahap Pertama Selesai',
-                'slug' => Str::slug('Renovasi Balai Desa Kertayasa Tahap Pertama Selesai'),
+                'title' => 'Renovasi Balai Desa Pintar Tahap Pertama Selesai',
+                'slug' => Str::slug('Renovasi Balai Desa Pintar Tahap Pertama Selesai'),
                 'excerpt' => 'Renovasi balai desa tahap pertama telah selesai dilaksanakan dengan dukungan Dana Desa dan swadaya masyarakat.',
-                'content' => '<p>Renovasi Balai Desa Kertayasa tahap pertama telah selesai dilaksanakan. Renovasi ini meliputi perbaikan atap, cat tembok, dan penataan ruangan untuk memberikan kenyamanan bagi masyarakat yang berkunjung ke balai desa.</p><p>Kepala Desa Kertayasa menyampaikan terima kasih kepada seluruh masyarakat yang telah mendukung renovasi ini melalui gotong royong dan swadaya. Renovasi tahap kedua akan segera dimulai untuk melengkapi fasilitas balai desa.</p>',
+                'content' => '<p>Renovasi Balai Desa Pintar tahap pertama telah selesai dilaksanakan. Renovasi ini meliputi perbaikan atap, cat tembok, dan penataan ruangan untuk memberikan kenyamanan bagi masyarakat yang berkunjung ke balai desa.</p><p>Kepala Desa Pintar menyampaikan terima kasih kepada seluruh masyarakat yang telah mendukung renovasi ini melalui gotong royong dan swadaya. Renovasi tahap kedua akan segera dimulai untuk melengkapi fasilitas balai desa.</p>',
                 'featured_image' => '/assets/images/news/renovasi-balai.jpg',
                 'status' => 'published',
                 'is_featured' => false,
